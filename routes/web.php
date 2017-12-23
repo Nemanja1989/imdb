@@ -19,4 +19,10 @@ Route::get('/movies', 'MoviesController@index')->name('movies');
 
 Route::get('/movie/{id}', 'MoviesController@show')->name('movie');
 
+Route::get('/movies/create', 'MoviesController@create')->name('create');
+
+
+Route::post('/movies/create', 'MoviesController@store')->name('store');
+
+
 

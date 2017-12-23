@@ -9,7 +9,7 @@
 
     <div class="jumbotron">
         <h1>{{ $movie->title }}</h1>
-        <p> Genre: {{ $movie->genre }} | {{ $movie->director}} | {{ $movie->age }}</p>
+        <p> Genre: {{ $movie->genre }} | {{ $movie->director}} | {{ $movie->year }}</p>
         <p>{{ $movie->storyline, 0, 100}}</p>
 
     </div>
