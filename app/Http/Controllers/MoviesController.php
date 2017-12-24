@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Movie;
+use App\Comment;
 
 class MoviesController extends Controller
 {
@@ -16,8 +17,9 @@ class MoviesController extends Controller
 
     public function show($id){
         $movie = Movie::find($id);
+        $comments = Comment::getComment($id);
 
-        return view('movie',compact('movie') );
+        return view('movie',compact('movie', 'comments') );
     }
 
     public function create(){

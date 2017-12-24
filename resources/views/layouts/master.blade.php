@@ -24,7 +24,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a href="http://vivify.local/imdb/public/movies">Movies</a></li>
-                <li><a href="http://vivify.local/imdb/public/movies/add">Add movie</a></li>
+                <li><a href="http://vivify.local/imdb/public/movies/create">Add movie</a></li>
             </ul>
             <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">

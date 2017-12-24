@@ -13,8 +13,8 @@
         @foreach($movies as $movie)
             <div class="jumbotron">
                 <h1><a href="{{route('movie', ['id' => $movie->id])}}" > {{ $movie->title }} </a></h1>
-                <p>{{ substr($movie->storyline, 0, 100)}}</p>
-                <p><a href="{{route('movie', ['id' => $movie->id])}}" class="btn btn-primary btn-lg">Learn more</a></p>
+                <p>{{ substr($movie->storyline, 0, 100)}} . . .</p>
+                <p><a href="{{route('movie', ['id' => $movie->id])}}" class="btn btn-primary btn-lg">Read more</a></p>
             </div>
 
         @endforeach
