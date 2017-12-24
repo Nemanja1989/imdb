@@ -18,13 +18,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://vivify.local/imdb/public/movies">IMDB</a>
+            <a class="navbar-brand" href="{{ route('movies') }}">IMDB</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="http://vivify.local/imdb/public/movies">Movies</a></li>
-                <li><a href="http://vivify.local/imdb/public/movies/create">Add movie</a></li>
+                <li><a href="{{ route('movies') }}">Movies</a></li>
+                <li><a href="{{ route('create') }}">Add movie</a></li>
             </ul>
             <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">

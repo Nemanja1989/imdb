@@ -12,4 +12,9 @@ class Movie extends \Eloquent
         return self::get();
     }
 
+    public function comments() {
+        return $this->hasMany(Comment::class);
+    }
+
+
 }

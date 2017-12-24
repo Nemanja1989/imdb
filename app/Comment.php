@@ -11,4 +11,9 @@ class Comment extends \Eloquent
     public static function getComment($id){
         return self::where('movie_id',$id)->orderBy('created_at', 'DESC')->get();
     }
+
+    public function movie() {
+        return $this->belongsTo(Movie::class);
+    }
+
 }
