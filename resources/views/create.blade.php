@@ -58,7 +58,7 @@
 
         <div class="form-group">
             <label for="year">Year</label>
-            <input type="text" class="form-control" id="year" name="year"/>
+            <input type="number" class="form-control" id="year" name="year"/>
 
             @if($errors->has('year'))
                 @foreach($errors->get('year') as $error)

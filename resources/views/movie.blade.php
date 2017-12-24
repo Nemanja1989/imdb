@@ -9,7 +9,7 @@
 
     <div class="jumbotron">
         <h1>{{ $movie->title }}</h1>
-        <p> Genre: {{ $movie->genre }} | {{ $movie->director}} | {{ $movie->year }}</p>
+        <p> Genre: <a href="{{route( 'genres',['genre' => $movie->genre])}}">{{ $movie->genre }}</a> | {{ $movie->director}} | {{ $movie->year }}</p>
         <p>{{ $movie->storyline}}</p>
 
     </div>

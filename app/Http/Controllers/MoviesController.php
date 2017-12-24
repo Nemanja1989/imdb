@@ -28,11 +28,10 @@ class MoviesController extends Controller
 
     public function store(Request $request){
         //validate
-
         $this->validate($request, ['title' => 'required',
                                    'genre' => 'required',
                                    'director' => 'required',
-                                   'year'  => 'nullable|digits_between:1900,2018|numeric',
+                                   'year'  => 'integer | between: 1900, 2018',
                                    'storyline' => 'max:1000']);
 
         Movie::create($request->all());
